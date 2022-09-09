@@ -1,23 +1,22 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main -print alphabet in lower and upercase
- *
- *
- * Return: (0) Success
+ * main - Entry point
+ * Descrition: prints alphabet in lowercase then upercase
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char ch;
+	int ch;
 
-for (ch = 'a' ; ch <= 'z' ; ch++)
-{
-putchar(ch);
-}
-for (ch = 'A' ; ch <= 'z' ; ch++)
-}
-putchar(ch);
-}
-putchar('\n');
-return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'A'; ch <= 'z'; ch++)
+	}
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }

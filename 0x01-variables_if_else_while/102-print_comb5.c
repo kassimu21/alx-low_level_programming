@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int p, q;
@@ -26,7 +24,6 @@ int main(void)
 				continue;
 			putchar(',');
 			putchar(' ');
-			
 		}
 	}
 	putchar('\n');

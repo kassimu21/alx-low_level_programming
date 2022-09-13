@@ -16,5 +16,6 @@ int main(void)
 	{
 		putchar(c);
 	}
-	putchar('\n');
+	printi_alphabet();
+	return (0);
 }

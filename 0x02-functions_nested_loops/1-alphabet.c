@@ -1,12 +1,15 @@
-#include <stdio.h>
-#include "main.h"
-
+#ifndef _MAIN_H_
+#define _MAIN_H_
 /**
- * main - Entry point
- *
- * Description: Print athe letters of the english alphabets
- * in lowercase to the terminal
- * Return: void
+ * _putchar - Display to std out
+ * c: parameter to compare
+ * Return: 1 or 0
+ */
+ int _putchar(char c);
+ /**
+ * int - a data type to specify the kind of value that is used in the function
+ * _putchar - the "_" before the putchar is used when declaring a function
+ * (char *c) - is the arguments passed
  */
 
 void print_alphabet(void)

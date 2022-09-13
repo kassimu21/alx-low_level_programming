@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,7 +8,7 @@
  * Return: void
  */
 
-int main(print_alphabet)
+void print_alphabet(void)
 {
 	char c;
 

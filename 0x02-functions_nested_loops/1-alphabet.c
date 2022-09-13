@@ -1,11 +1,13 @@
-#include <stdio>
 #include "main.h"
 
-/* Return: Always 0 (Success)
+/**
+ * main - Entry point
  *
- *  * 
+ * Description: Print alphabet bets in lower case 
  *
- * Description: This a program that print alphabet in low case
- *
- 
- 
+ * Returnlways 0 (Success)
+ */
+
+	charleteteerrfnnlvs.dan<
+{
+	cha}

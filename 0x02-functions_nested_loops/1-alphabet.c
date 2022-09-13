@@ -6,17 +6,16 @@
  *
  * Description: Print alphabets in lowercase
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void  print_alphabet(void)
 {
-	char letter = 'a';
+	char c;
 
-	while (letter <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(a);
-		letter++;
+		putchar(c);
 	}
 
 	putchar('\n');

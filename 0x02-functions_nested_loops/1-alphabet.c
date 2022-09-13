@@ -9,15 +9,11 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char letter = 'a';
+	char a;
 
-	while (letter <= 'z')
-	{
-		putchar(letter);
-		letter++;
-	}
-
-	putchar('\n');
+	for (a = 'a'; a <= 'z'; a++)
+		_putchar(a);
+		_putchar('\n');
 }

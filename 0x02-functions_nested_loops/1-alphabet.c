@@ -1,21 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_alphabet - function to print alphabet in lower case
+ * main - check code
  *
  * Description: print alphabet in lower case
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
+	char letter = 'a';
+	
+	while (letter <= 'z')
 	{
-		putchar(c);
+		putchar(letter);
+		letter++;
 	}
-	printi_alphabet();
-	return (0);
+
+	putchar('\n');
 }

@@ -4,14 +4,14 @@
 /**
  * main - Entry point
  *
- * Description: Print alphabets in lower case
- *
- * Return: Always 0 (Success)
+ * Description: Print athe letters of the english alphabets
+ * in lowercase to the terminal
+ * Return: void
  */
 
 void print_alphabet(void)
 {
-	char (a);
+	char letter = 'a';
 
 	while(letter <= 'z')
 	{

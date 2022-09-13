@@ -9,7 +9,7 @@
  * Return: void
  */
 
-int main(void)
+int main(print_alphabet)
 {
 	char c;
 

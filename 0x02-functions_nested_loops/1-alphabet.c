@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#include <stdio.h>
+#include "main.h"
 /**
  * _putchar - Display to std out
  * c: parameter to compare
@@ -22,5 +22,5 @@ void print_alphabet(void)
 		letter++;
 	}
 
-	_putchr('\n');
+	_putchar('\n');
 }

@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Program entry point
+ * print_alphabet - entry point
  *
- * Description: Print alphabets in lowercase
+ * Description: Print the alphabet with _putchar
  *
  * Return: void
  */
@@ -14,8 +14,8 @@ void print_alphabet(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
+		_putchar(c);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }

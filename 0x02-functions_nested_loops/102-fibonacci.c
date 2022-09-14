@@ -1,5 +1,4 @@
-#include "stdio.h"
-
+#include <stdio.h>
 /**
  * main - main block
  * Description - program that prints first 50 Fibonacci numbers
@@ -7,25 +6,21 @@
  */
 int main(void)
 {
-	int count = 2;
-	long int i = 1, j = 2;
-	long int k;
+	int count = 0;
+	long int a = 1;
+	long int b = a;
+	long int c = a + b;
 
-	printf("%lu, ", i);
-	while (count <= 50)
+	while (c < 4000000)
 	{
-	if (count == 50)
+	if (c % 2 == 0)
 	{
-	printf("%lu\n", j);
+	counter += c;
 	}
-	else
-	{
-	printf("%lu, ", j);
+	a = b;
+	b = c;
+	c = a + b;
 	}
-	k = j;
-	j += i;
-	i = k;
-	count++;
-	}
+	printf("%d\n", counter);
 	return (0);
 }

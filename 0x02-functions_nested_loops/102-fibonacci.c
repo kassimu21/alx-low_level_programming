@@ -22,7 +22,7 @@ int main(void)
 	printf("%lu, ", j);
 	}
 	k = j;
-	j + = i;
+	j += i;
 	i = k;
 	count++;
 	}

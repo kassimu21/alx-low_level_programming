@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdio.h> 
+#include <stdio.h>
 /**
  * print_times_table - prints nxn times table
  * @n: maximum multiple of times tabe
  *
- * Description: This will print a times table formed by nxn multiplications. 
+ * Description: This will print a times table formed by nxn multiplications.
  * where n can be any number from 0 to 15.
  * Return: Always return n
  */

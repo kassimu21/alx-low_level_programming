@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h> 
 /**
  * print_times_table - prints nxn times table
  * @n: maximum multiple of times tabe

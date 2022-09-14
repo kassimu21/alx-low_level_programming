@@ -5,33 +5,29 @@
  */
 void times_table(void)
 {
-	int num1 (10) = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-	int num2 (10) = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-	int a, b;
-	int result;
-	int firstnum;
-	int lastnum;
-	for (a = 0; a <= 9: a++)
+	int i, j, k;
+	for (i = 0; i <= 9; i++)
 	{
-	for (b = 0; b  <= 9; b++)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+	for (j = 1; j <=9; j++)
 	{
-	result = num1 (a) * num2 (b);
-	firstnum = result / 10;
-	lastnum = result % 10:
-	if ( b != 0)
+		k = (i * j);
+	if ((k / 10) > 0)
+	{
+		_putchar((k / 10) + '0');
+	}
+	else
+	{
+		_putchar(' ');
+	}
+		_putchar((k % 10) + '0');
+	if (j < 9)
 	{
 		_putchar(',');
 		_putchar(' ');
-		if (result <10)
-		_putchar(' ');
 	}
-		if (result < 10)
-		_putchar('0' + result);
-		else
-		{
-		_putchar('0' + firstnum);
-		_putchar('0' + lastnum);
-		}
 	}
 	_putchar('\n');
 	}

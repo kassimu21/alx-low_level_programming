@@ -4,19 +4,23 @@
  *
  * Return: nothing
  */
-
 int main(void)
 {
-	int a = 0, b =1, c = 0;
-	int sum = 0;
-
+	int counter = 0;
+       	long int a = 1;
+	long int b = a;
+	long int c = a + b;
+	
 	while (c < 4000000)
 	{
-		c = a + b;
+	if (c % 2 == 0)
+	{
+		counter += c;
+	}
 		a = b;
 		b = c;
-		if (next % 2 == 0)
-			sum += c;
-	printf("%i\n", sum);
+		c = a + b;
+	}
+	printf("%d\n", counter);
 	return (0);
 }

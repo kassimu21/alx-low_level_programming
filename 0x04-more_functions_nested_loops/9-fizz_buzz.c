@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -8,7 +8,6 @@
  * 3 & 5 multiples print FizzBuzz instead of the no
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
@@ -17,7 +16,6 @@ int main(void)
 	char fb[] = "FizzBuzz";
 
 	for (i = 1; i <= 100; i++)
-	
 	{
 		if (i == 100)
 			printf("%s", b);

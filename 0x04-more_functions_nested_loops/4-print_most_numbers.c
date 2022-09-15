@@ -2,8 +2,8 @@
 
 /**
  * print_most_numbers - prints the most numbers
- *
- * Description: prints out numbers from 0 to 9 to 
+ * 
+ * Description: prints out numbers from 0 to 9 to
  * terminal except the numbers 2 and 4.
  * Return: 0
  */
@@ -22,5 +22,5 @@ void print_most_numbers(void)
 		n++;
 	}
 	_putchar('\n');
-	
+
 }

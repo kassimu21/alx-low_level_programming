@@ -2,18 +2,29 @@
 
 /**
  * print_most_numbers - prints the most numbers
+ *
+ * Description: prints out numbers from 0 to 9 to 
+ * terminal except the numbers 2 and 4.
+ * Return: Void
  */
 
 void print_most_numbers(void)
 {
-	int i:
+	int n;
 
-	for (i = 48; i < 58; i++)
+	n = 0;
+	while (n < 10)
 	{
-		if (i == 50 || i == 52)
+		for (n == 2 || n == 4)
+		{
+			n++;
 			continue;
+		}
 		else
-			_putchar(i);
+		{
+			_putchar('0' + n);
+		}
+		n++;
 	}
 	_putchar('\n');
 }

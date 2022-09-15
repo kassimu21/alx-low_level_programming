@@ -1,14 +1,15 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_triangle - prints triangle
- *
+ * print_triangle - prints triangle followed by new line
  * @size: size of triangle
+ * Return: Void
  */
 
 void print_triangle(int size)
 {
-	int 1, j, k;
+	int i, j, k;
 	
 	if (size <= 0)
 	{

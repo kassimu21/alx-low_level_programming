@@ -19,12 +19,12 @@ void print_triangle(int size)
 		{
 			for ((base = size - height)1; base > 0; base--)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
 			
 			for (base = 0; base < height; base++)
 			{
-				putchar('#');
+				_putchar('#');
 			}
 
 			if (height == size)
@@ -32,8 +32,8 @@ void print_triangle(int size)
 				continue;
 			}
 
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }

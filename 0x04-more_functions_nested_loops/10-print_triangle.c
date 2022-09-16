@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,29 +7,27 @@
  *
  * Return: Always 0 (Success)
  */
-
 void print_triangle(int size)
 {
-	int height, base;
+	int sp, ro, tr;
 	
-	for (height = 1; height <= size; height++)
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (ro = 0; ro <= (size - 1); ro++)
 		{
-			for ((base = size - height)1; base > 0; base--)
+			for (sp = 0; sp < (size - 1) - ro; sp++)
 			{
 				_putchar(' ');
 			}
-			
-			for (base = 0; base < height; base++)
+			for (tr = 0; tr <= ro; tr++)
 			{
 				_putchar('#');
 			}
-
-			if (height == size)
-			{
-				continue;
-			}
-
 			_putchar('\n');
 		}
-	_putchar('\n');
+	}
 }

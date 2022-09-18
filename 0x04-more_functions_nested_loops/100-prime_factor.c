@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _sqrt - finds the square root
+ * _squart - finds the square root
  * 
  * @x: input number
  * 

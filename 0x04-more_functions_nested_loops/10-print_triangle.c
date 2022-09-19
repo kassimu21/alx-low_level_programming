@@ -9,41 +9,31 @@
  */
 
 void print_triangle(int size)
-
 {
-	int hght, base;
-
-
-	if (size <= 0)
 	
-		_putchar('\n');
+	int i = 1, ii;
 
-	else
-	
+
+	while (i <= size && size > 0)
 	{
-	
-		for (hght = 1; hght <= size; ++hght)
-		
+		ii = 0;
+		while (ii < size - 1)
 		{
-
-			for (base = 1; base <= size; ++base)
-		
-			{
-		
-				if ((hght + base) <= size)
-
-					_putchar(' ');
-		
-				else
-		
-					_putchar('#');
-		
-			}
-		
-			_putchar('\n');
-		
+			_putchar(' ');
+			ii++;
 		}
+		ii = 0;
+		while (ii < i)
+		{
+			_putchar('#');
+			ii++;
+		}
+
+		_putchar('\n');
+		i++;
 	}
+	if (i == 1)
+		_putchar('\n');
 
 }
 

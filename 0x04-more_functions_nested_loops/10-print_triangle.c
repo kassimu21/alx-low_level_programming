@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle
+ * print_triangle - check for a digit
  *
- * @size: size of the triangle
+ * @size: integer type
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void print_triangle(int size)
@@ -36,4 +36,3 @@ void print_triangle(int size)
 		_putchar('\n');
 
 }
-

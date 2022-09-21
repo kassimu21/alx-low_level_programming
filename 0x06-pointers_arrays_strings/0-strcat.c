@@ -2,7 +2,7 @@
 /**
  * *_strcat - concatenates two strings
  * @dest: pointer destination
- * @src: pointer source
+ * src: pointer source
  * Return: void
  */
 
@@ -16,7 +16,7 @@ do {
 	a++;
 	dest[i] = src[a];
 	i++;
-}while (src[a] != '\0');
+} while (src[a] != '\0');
 
 return (dest);
 }

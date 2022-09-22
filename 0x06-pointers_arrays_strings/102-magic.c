@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  * main - add one line of code to print a[2] = 98
  *

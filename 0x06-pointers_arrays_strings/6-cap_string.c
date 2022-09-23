@@ -4,40 +4,22 @@
  * cap_string - Capitalizes all words of a string.
  * @str: The string to be capitalized.
  *
- * Return: A pointer to the changed string.
+ * Return: s
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-char sep[] = ",\t;\n; .!?\"(){}";
-int flag, i, ii;
+	int len, j;
+	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-for (i = 0; str[i] != '\0'; i++)
-{
-	flag = 0;
+	for (len = 0; s[len] != '\0'; len++)
+	{
+		if (len == 0 && s[len] >= 97 && s[len] <= 122)
+			s[len] -= 32;
 
-	if (i == 0)
-	{
-		flag = 1;
+		for (j = 0; j < 13; j++)
+			if (s[len] == sep[j])
+				if (s[len + 1] >= 97 && s[len + 1] <= 122)
+					s[len + 1] -= 32;
 	}
-	else
-	{
-		for (ii = 0; sep[ii] != '\0'; ii++)
-		{
-			if (str[i - 1] == sep[ii])
-			{
-				flag = 1;
-				break;
-			}
-		}
-	}
-	
-	if (flag == 1)
-	{
-		if (str[i] <= 'z' && str[i] >= 'a')
-		{
-			str[i] -= ('a' - 'A');
-		}
-	}
-}
-return (str);
+	return (s);
 }

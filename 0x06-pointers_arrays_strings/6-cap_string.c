@@ -2,25 +2,31 @@
 
 /**
  * cap_string - Capitalizes all words of a string.
- * @str: The string to be capitalized.
+ * @str: string to capitalized.
  *
- * Return: s
+ * Return: address of s
  */
 char *cap_string(char *s)
 {
-	int len, j;
-	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!',
-		'?', '"', '(', ')', '{', '}'};
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	for (len = 0; s[len] != '\0'; len++)
+	while (*(s + i))
 	{
-		if (len == 0 && s[len] >= 97 && s[len] <= 122)
-			s[len] -= 32;
-
-		for (j = 0; j < 13; j++)
-			if (s[len] == sep[j])
-				if (s[len + 1] >= 97 && s[len + 1] <= 122)
-					s[len + 1] -= 32;
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		{
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
+		}
+		i++;
 	}
 	return (s);
 }

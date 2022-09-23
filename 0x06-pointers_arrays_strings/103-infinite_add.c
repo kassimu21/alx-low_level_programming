@@ -2,14 +2,13 @@
 
 /**
  * infinite_add - Adds ttwo numbers
- * @n1: The string containing the first number to be added.
- * @n2: The string containing the second number to be added.
- * @r: The buffer to store the result.
- * @r_index: The current index of the buffer.
+ * @n1: first number
+ * @n2: second number
+ * @r: buffer result
+ * @size_r: buffer size
  *
- * Return: r or 0.
+ * Return: address of r or 0.
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int int sizer_r)
 {
 	int i, j, k, l, m, n;

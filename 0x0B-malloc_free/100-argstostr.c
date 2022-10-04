@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 		c++;
 	}
 
-	aout = malloc((c + 1) * sizeof(cha));
+	aout = malloc((c + 1) * sizeof(char));
 
 	if (aout == NULL)
 	{

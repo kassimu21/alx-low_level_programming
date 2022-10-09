@@ -16,7 +16,7 @@ void _is_zero(char *argv[])
 	for (i = 0; argv[1][i]; i++)
 		if (argv[1][i] != '0')
 		{
-			isn1 =0;
+			isn1 = 0;
 			break;
 		}
 
@@ -36,7 +36,7 @@ void _is_zero(char *argv[])
 
 /**
  * _initialize_array - set memery to zero in a new array
- * @ar: cha array.
+ * @ar: char array.
  * @lar: length of the char array.
  *
  * Return: pointer of a char array.
@@ -74,7 +74,7 @@ int _checknum(char *argv[], int n)
 }
 
 /**
- * main -Entry point.
+ * main - Entry point.
  * program that multiplies two positive numbers.
  * @argc: number of arguments.
  * @argv: arguments vector.
@@ -88,8 +88,12 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		printf("Error\n"), exit(98);
+	ln1 = _checknum(argv, 1), ln2 = _checknum(argv, 2);
+	_is_zero(argv), lnout = ln1 + ln2, nout = malloc(lnout + 1);
+	if (nout == NULL)
+		printf("Error\n"), exit(98);
 	nout = _initialize_array(nout, lnout);
-	k = lnout - 1, i = ln1 - 1, j = ln2 -1, ca = addl = 0;
+	k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
 	for (; k >= 0; k--, i--)
 	{
 		if (i < 0)
@@ -108,7 +112,7 @@ int main(int argc, char *argv[])
 			if (nout[0] != '0')
 				break;
 			lnout--;
-			free(nout, nout = malloc(lnout + 1), nout = _initialize_array(nout, lnout);
+			free(nout), nout = malloc(lnout + 1), nout = _initialize_array(nout, lnout);
 			k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
 		}
 		if (j >= 0)

@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	f = get_op_func(argv[2]);
 	if (f == NULL)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		exit(99);
 	}
 	c = f(a, b);

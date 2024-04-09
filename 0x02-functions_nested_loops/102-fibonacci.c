@@ -1,26 +1,31 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Description - program that prints first 50 Fibonacci numbers
- * Return: Always (Success)
+ * main - Prints the first 52 fibonacci numbers
+ *
+ * Return: Nothing!
  */
 int main(void)
 {
-	int count = 0;
-	long int a = 1;
-	long int b = a;
-	long int c = a + b;
+	int i = 0;
+	long j = 1, k = 2;
 
-	while (c < 4000000)
+	while (i < 50)
 	{
-	if (c % 2 == 0)
-	{
-	counter += c;
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+		else
+		{
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
+		}
+
+		++i;
 	}
-	a = b;
-	b = c;
-	c = a + b;
-	}
-	printf("%d\n", counter);
+
+	printf("\n");
 	return (0);
 }
